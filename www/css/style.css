@@ -3,9 +3,11 @@ html{
     font-family: Arial, Helvetica, sans-serif;
 }
 body{
-    margin: 0;
+    /*letter-spacing: 1px;*/
 }
 .clr::after{
+    content: "";
+    display: inline-block;
     clear: both;
 }
 .menu::after{
@@ -13,32 +15,37 @@ body{
     display: inline-block;
     width: 100%;
 }
-.weapper{
+.wrapper{
     margin: 0 auto;
     max-width: 960px;
+    /*padding: 75px 0 100px;*/
+}
+.first,
+nav,
+.third{
+    margin-bottom: 40px;
 }
 .h1{
     font-size: 24px;
     color: #bfbfbf;
     font-family: "Arial";
     font-weight: bold;
+    /*font: bold 24px Arial, sans-serif;*/
 }
-header a{
+.first a{
     color: white;
     text-decoration: none;
 }
-header ul{
+.first ul{
     background-color: #2a3644;
-    border-radius: 3px;
-    padding: 6px 10px;
+    border-radius: 6px;
+    box-sizing: content-box;
 }
-header li{
+.first li{
     list-style: none;
-    display: inline-block;
 }
 .menu{
-    padding-left: 0;
-    border-radius: 3px;
+    padding: 0;
     text-align: justify;
     font-size: 0;
 }
@@ -51,12 +58,12 @@ header li{
 }
 .menu a{
     display: block;
-    padding: 5px 30px;
+    padding: 10px 30px;
     text-decoration: none;
 }
 .submenu li{
     position: relative;
-    display: inline-block;
+    display: block;
 }
 .submenu{
     position: absolute;
@@ -66,9 +73,9 @@ header li{
     top: 100%;
     z-index: 1;
 }
-.submaenu ul{
-    padding: 10px;
-    width: 250px;
+.submenu ul{
+    padding: 0;
+    width: 210px;
     list-style: none;
 }
 .submenu>li:first-child{
@@ -81,17 +88,153 @@ header li{
     display: block;
 }
 .menu>li:first-child:hover>a{
-    border-radius: 8px 0 0 8px;
+    border-radius: 4px 0 0 4px;
 }
 .menu>li:last-child:hover>a{
-    border-radius:  0 8px 8px 0;
+    border-radius:  0 4px 4px 0;
 }
 .menu>li:hover>a{
+    color: #fd8612;
+}
+.submenu ul{
     background-color: lightgray;
 }
-.seconde-sub{
+.submenu li a{
+    color: black;
+}
+nav{
+    display: table;
+    width: 100%;
+}
+nav ul{
+    display: table-row;
+    list-style: none;
+    background-color: #2a3644;
+}
+nav li{
+    display: table-cell;
+    text-align: center;
+}
+nav li a{
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+}
+/*.sub,
+.subs{
+    position: absolute;
+    width: 210px;
+    transition: all 0.3s ease-in-out;
+    transform: scaleY(0);
+    transform-origin: 0 0;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 1;
+}*/
+.sub{
     position: absolute;
     display: none;
-    padding-left: 10px;
-    top: 0;
+    top: 100%;
+    padding: 10px 0;
+    width: 150px;
+    list-style: none;
+    z-index: 1;
 }
+.subs{
+    position: absolute;
+    display: none;
+    padding-left: 120px;
+    top: 100%;
+    width: 200px;
+    list-style: none;
+    z-index: 1;
+}
+.subes{
+    position: absolute;
+    display: none;
+    padding-right: 10px;
+    top: 100%;
+    width: 150px;
+    list-style: none;
+    z-index: 1;
+}
+.menus>li{
+    position: relative;
+    font-size: 14px;
+    border-right: 1px solid white;
+    border-left: 1px solid white;
+}
+.sub li{
+    position: relative;
+    display: inline-block;
+    transition: all 0.2s ease;
+}
+.sub>li:first-child{
+    border-left: none;
+}
+.sub>li:last-child{
+    border-right: none;
+}
+.sub ul{
+    padding: 0px;
+    width: 120px;
+    list-style: none;
+}
+.menus li:hover .sub{
+    display: block;
+}
+.sub li:hover .subs{
+    display: block;
+}
+.subs li:hover .subes{
+    display: block;
+}
+.subs>li:first-child{
+    border-left: none;
+}
+.subs>li:last-child{
+    border-right: none;
+}
+.subes li{
+    position: relative;
+    display: inline-block;
+    transition: all 0.2s ease;
+}
+.subes>li:first-child{
+    border-left: none;
+}
+.subes>li:last-child{
+    border-right: none;
+}
+.menus::after{
+    content: "";
+    display: inline-block;
+    width: 100%;
+}
+.menus>li:hover>a{
+    background-color: lightgray;
+    color: #fd8612;
+}
+.third{
+    background-color: #2a3644;
+    width: 100%;
+    font-size: 14px;
+}
+.about li,
+.social li{
+    display: inline-block;
+    font-size: 14px;
+}
+.about li{
+    margin-right: 30px;
+}
+.social li{
+    margin-left: 20px;
+}
+.about{
+    float:left;
+}
+.social{
+    float:right;
+} 
