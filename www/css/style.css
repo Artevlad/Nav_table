@@ -213,8 +213,17 @@ nav li a{
     width: 100%;
 }
 .menus>li:hover>a{
-    background-color: lightgray;
     color: #fd8612;
+}
+.sub ul,
+.subs ul,
+.subes ul{
+    background-color: lightgray;
+}
+.sub li a,
+.subs li a,
+.subes li a{
+    color: black;
 }
 .third{
     background-color: #2a3644;
