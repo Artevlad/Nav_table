@@ -101,6 +101,7 @@ nav,
 }
 .menu>li:hover>a{
     color: #fd8612;
+    background-color: #3f4852;
 }
 .submenu li:hover a{
     background-color: #2a3644;
@@ -117,6 +118,7 @@ nav ul{
     display: table-row;
     list-style: none;
     background-color: #2a3644;
+    border-radius: 6px 6px;
 }
 nav li{
     display: table-cell;
@@ -228,6 +230,7 @@ nav li a{
 }
 .menus>li:hover>a{
     color: #fd8612;
+    background-color: #3f4852;
 }
 .sub ul,
 .subs ul,
@@ -241,8 +244,8 @@ nav li a{
 }
 .third{
     background-color: #2a3644;
-    width: 100%;
     font-size: 14px;
+    display: block;
 }
 .about li,
 .social li{
