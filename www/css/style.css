@@ -9,7 +9,7 @@ body{
 }
 .clr::after{
     content: "";
-    display: inline-block;
+    display: block;
     clear: both;
 }
 .menu::after{
@@ -54,8 +54,8 @@ nav,
     position: relative;
     display: inline-block;
     font-size: 14px;
-    border-right: 1px solid white;
-    border-left: 1px solid white;
+    border-right: 1px solid #3f4852;
+    border-left: 1px solid #3f4852;
 }
 .menu a{
     display: block;
@@ -71,7 +71,7 @@ nav,
     position: absolute;
     display: none;
     padding-left: 0;
-    padding-top: 10px;
+    padding-top: 5px;
     top: 100%;
     z-index: 1;
 }
@@ -81,27 +81,33 @@ nav,
     list-style: none;
     background-color: lightgray;
 }
-.submenu>li:first-child{
-    border-left: none;
-}
-.submenu>li:last-child{
-    border-right: none;
-}
 .submenu li:last-child{
     border-bottom: none;
 }
 .menu li:hover .submenu{
     display: block;
 }
-.menu li:first-child:hover>a{
+.menu>li:first-child:hover>a{
+    border-radius: 6px 0 0 6px;
+}
+.menu>li:last-child:hover>a{
+    border-radius: 0 6px 6px 0;
+}
+.submenu li:first-child:hover>a{
     border-radius: 6px 6px 0 0;
 }
-.menu li:last-child:hover>a{
-    border-radius:  0 0 6px 6px;
+.submenu li:last-child:hover>a{
+    border-radius: 0 0 6px 6px;
 }
 .menu>li:hover>a{
     color: #fd8612;
     background-color: #3f4852;
+}
+.menu li:first-child{
+    border-left: none;
+}
+.menu li:last-child{
+    border-right: none;
 }
 .submenu li:hover a{
     background-color: #2a3644;
@@ -134,7 +140,7 @@ nav li a{
     position: absolute;
     display: none;
     top: 100%;
-    padding: 10px 0;
+    padding: 5px 0;
     width: 210px;
     list-style: none;
     z-index: 1;
@@ -143,7 +149,7 @@ nav li a{
     position: absolute;
     display: none;
     left: 100%;
-    padding-left: 10px;
+    padding-left: 5px;
     top: 0;
     width: 210px;
     list-style: none;
@@ -153,7 +159,7 @@ nav li a{
     position: absolute;
     display: none;
     right: 100%;
-    padding-right: 10px;
+    padding-right: 5px;
     top: 0;
     width: 210px;
     list-style: none;
@@ -169,8 +175,8 @@ nav li a{
 .menus>li{
     position: relative;
     font-size: 14px;
-    border-right: 1px solid white;
-    border-left: 1px solid white;
+    border-right: 1px solid #3f4852;
+    border-left: 1px solid #3f4852;
 }
 .sub li{
     position: relative;
@@ -246,14 +252,34 @@ nav li a{
     background-color: #2a3644;
     font-size: 14px;
     display: block;
+    text-align: justify;
+}
+.third a{
+    color: white;
+    text-decoration: none;
+}
+.third ul{
+    border-radius: 6px;
+    box-sizing: content-box;
+}
+.third a{
+    display: block;
+    text-decoration: none;
+}
+.third li{
+    position: relative;
+    display: inline-block;
+    font-size: 14px;
+}
+.about>li{
+    border-right: 1px solid #3f4852;
+    border-left: 1px solid #3f4852;
+    margin-right: 30px;
 }
 .about li,
 .social li{
     display: inline-block;
     font-size: 14px;
-}
-.about li{
-    margin-right: 30px;
 }
 .social li{
     margin-left: 20px;
@@ -263,4 +289,54 @@ nav li a{
 }
 .social{
     float:right;
-} 
+}
+.third li:hover .submenu{
+    display: block;
+}
+.third li:first-child:hover>a{
+    border-radius: 6px 6px 0 0;
+}
+.third li:last-child:hover>a{
+    border-radius:  0 0 6px 6px;
+}
+.third>li:hover>a{
+    color: #fd8612;
+    background-color: #3f4852;
+}
+.about,
+.social{
+    margin: 0;
+    padding: 0;
+}
+.double{
+    width: 420px;
+}
+.double li{
+    display: block;
+}
+.double-bg ul{
+    border-radius: 6px;
+}
+.double ul{
+    width: 210px;
+}
+.about li a{
+    padding: 12px;
+}
+.submenu li{
+    display: block;
+}
+.left{
+    float: left;
+}
+.double-bg{
+    display: inline-block;
+    background-color: red;
+    box-sizing: border-box;
+}
+.left{
+    border: 6px;
+}
+.double-bg ul:first-child li{
+    border-right: 1px solid #3f4852;
+}
