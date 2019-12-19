@@ -312,15 +312,18 @@ nav li:last-child:hover>a{
 .third li:last-child{
     border-right: none;
 }
-.third li:first-child:hover>a{
-    border-radius: 6px 6px 0 0;
-}
-.third li:last-child:hover>a{
-    border-radius:  0 0 6px 6px;
-}
-.third>li:hover>a{
+.third li:hover>a{
     color: #fd8612;
     background-color: #3f4852;
+}
+.third li:first-child:hover>a{
+    border-radius: 6px 0 0 6px;
+}
+.submenu li:first-child:hover>a{
+    border-radius: 6px 6px 0 0;
+}
+.submenu li:last-child:hover>a{
+    border-radius:  0 0 6px 6px;
 }
 .about,
 .social{
@@ -340,7 +343,7 @@ nav li:last-child:hover>a{
     width: 210px;
 }
 .about li a{
-    padding: 12px;
+    padding: 14px;
 }
 .submenu li{
     display: block;
@@ -380,10 +383,61 @@ nav li:last-child:hover>a{
 }
 .social .fb{
     width: 10px;
-    height: 19px;
-    transition: all 1s ease;
-    background-position: 0px 5px;
+    height: 24px;
+    transition: all 0.2s ease;
+    background-position: 0px 6px;
+}
+.social .tw{
+    width: 19px;
+    height: 16px;
+    transition: all 0.2s ease;
+    background-position: 0px -17px;
+}
+.social .inst{
+    width: 15px;
+    height: 16px;
+    transition: all 0.2s ease;
+    background-position: -1px -33px;
+}
+.fb:hover{
+    width: 10px;
+    height: 24px;
+    transition: all 0.2s ease;
+    background-position: -10px 6px
+}
+.tw:hover{
+    width: 19px;
+    height: 16px;
+    transition: all 0.2s ease;
+    background-position: -17px -17px;
+}
+.inst:hover{
+    width: 15px;
+    height: 16px;
+    transition: all 0.2s ease;
+    background-position: -17px -33px;
+}
+.about>li:first-child>a::before{
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 16px;
+    left: 17px;
+    background: url(../img/spat.png) no-repeat -1px -49px;
+    transition: all 0.2s ease;
+}
+.about>li:first-child:hover>a:before{
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    left: 17px;
+    background: url(../img/spat.png) no-repeat -19px -49px;
+    transition: all 0.2s ease;
 }
 table{
     width: 100%;
+}
+.about>li:first-child a{
+    padding-left: 41px;
 }
