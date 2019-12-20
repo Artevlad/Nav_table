@@ -343,7 +343,7 @@ nav li:last-child:hover>a{
     width: 210px;
 }
 .about li a{
-    padding: 14px;
+    padding: 10.5px;
 }
 .submenu li{
     display: block;
@@ -435,9 +435,58 @@ nav li:last-child:hover>a{
     background: url(../img/spat.png) no-repeat -19px -49px;
     transition: all 0.2s ease;
 }
-table{
-    width: 100%;
-}
 .about>li:first-child a{
     padding-left: 41px;
+}
+.social{
+    padding: 2.5px 5px 2px 0;
+}
+.social li:hover>a{
+    background-color: #2a3644;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 16px;
+}
+thead{
+    background-color: #2a3644;
+    color: white;
+}
+thead th{
+    border: 1px solid #3f4852;
+}
+tbody{
+    color:#2a3644;
+}
+tbody th{
+    border-right: 1px solid #c0c1c2;
+    border-bottom: 1px solid #c0c1c2;
+    border-collapse: collapse;
+}
+tbody th:last-child{
+    border-right: none;
+}
+tbody tr:last-child th{
+    border-bottom: none;
+}
+tbody tr:nth-child(2n+1){
+    background-color: #f2f2f2;
+}
+tbody tr:nth-child(2n){
+    background-color: #e8e8e8;
+}
+thead tr:first-child th:nth-child(2){
+    text-align: left;
+    padding: 40px 25px;
+}
+tbody tr th:nth-child(2){
+    text-align: left;
+    padding: 15px 25px;
+}
+tbody tr th:nth-child(3),
+tbody tr th:nth-child(4),
+tbody tr th:nth-child(5){
+    text-align: right;
+    padding-right: 25px;
 }
