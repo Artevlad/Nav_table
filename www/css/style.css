@@ -417,7 +417,7 @@ nav li:last-child:hover>a{
     transition: all 0.2s ease;
     background-position: -17px -33px;
 }
-.about>li:first-child>a::before{
+.about>li:first-child>a:before{
     content: "";
     position: absolute;
     width: 15px;
@@ -464,15 +464,30 @@ tbody th{
     border-bottom: 1px solid #c0c1c2;
     border-collapse: collapse;
 }
+.table i,
+.table b{
+    border-right: 1px solid #c0c1c2;
+    border-bottom: 1px solid #c0c1c2;
+}
+.cell b{
+    border: 1px solid #3f4852;
+}
+.row i:last-child,
 tbody th:last-child{
     border-right: none;
 }
+.row p:last-child i,
 tbody tr:last-child th{
     border-bottom: none;
 }
+.row i{
+    border-left: none;
+}
+.row:nth-child(2n+1),
 tbody tr:nth-child(2n+1){
     background-color: #f2f2f2;
 }
+.row:nth-child(2n),
 tbody tr:nth-child(2n){
     background-color: #e8e8e8;
 }
@@ -490,6 +505,48 @@ tbody tr th:nth-child(5){
     text-align: right;
     padding-right: 25px;
 }
+.row:hover,
 tbody tr:hover{
     background-color: #c0c1c2;
+}
+.table{
+    display: table;
+    border-collapse: collapse;
+    width: 100%;
+}
+.table p{
+    display: table-row;
+}
+.table p:first-child {
+    background-color: #2a3644;
+    font-size: 16px;
+    color: #ffffff;
+}
+.table b{
+    font-weight: bold;
+    display: table-cell;
+}
+.table i{
+    display: table-cell;
+}
+.name{
+    padding: 15px 25px;
+    width: 500px;
+    text-align: left;
+}
+.year,
+.cell b:first-child,
+.row i:first-child{
+    text-align: center;
+}
+.marc,
+.ssd,
+.ram{
+    text-align: right;
+    padding-right: 25px;
+}
+table,
+.table{
+    overflow: hidden;
+    border-radius: 6px;
 }
