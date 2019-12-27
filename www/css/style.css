@@ -39,7 +39,7 @@ nav,
 }
 .first ul{
     background-color: #2a3644;
-    border-radius: 6px;
+    border-radius: 3px;
     box-sizing: content-box;
 }
 .first li{
@@ -59,13 +59,13 @@ nav,
 }
 .menu a{
     display: block;
-    padding: 10px 30px;
+    padding: 15px 30px;
     text-decoration: none;
 }
 .submenu li{
     position: relative;
     display: block;
-    border-bottom: 1px solid #3f4852;
+    border-bottom: 1px solid #b9bdc1;
 }
 .submenu{
     position: absolute;
@@ -88,16 +88,16 @@ nav,
     display: block;
 }
 .menu>li:first-child:hover>a{
-    border-radius: 6px 0 0 6px;
+    border-radius: 3px 0 0 3px;
 }
 .menu>li:last-child:hover>a{
-    border-radius: 0 6px 6px 0;
+    border-radius: 0 3px 3px 0;
 }
 .submenu li:first-child:hover>a{
-    border-radius: 6px 6px 0 0;
+    border-radius: 3px 3px 0 0;
 }
 .submenu li:last-child:hover>a{
-    border-radius: 0 0 6px 6px;
+    border-radius: 0 0 3px 3px;
 }
 .menu>li:hover>a{
     color: #fd8612;
@@ -120,7 +120,7 @@ nav{
     display: table;
     width: 100%;
     background-color: #2a3644;
-    border-radius: 6px 6px;
+    border-radius: 3px 3px;
 }
 nav ul{
     display: table-row;
@@ -132,7 +132,7 @@ nav li{
 }
 nav li a{
     display: block;
-    padding: 10px;
+    padding: 15px 30px;
     text-decoration: none;
     color: white;
 }
@@ -170,7 +170,7 @@ nav li a{
 .subes li{
     display: block;
     text-align: left;
-    border-bottom: 1px solid #3f4852;
+    border-bottom: 1px solid #b9bdc1;
 }
 .menus>li{
     position: relative;
@@ -206,10 +206,10 @@ nav li:last-child{
     border-right: none;
 }
 nav li:first-child:hover>a{
-    border-radius: 6px 0 0 6px;
+    border-radius: 3px 0 0 3px;
 }
 nav li:last-child:hover>a{
-    border-radius: 0 6px 6px 0;
+    border-radius: 0 3px 3px 0;
 }
 .sub li:hover .subs{
     display: block;
@@ -218,10 +218,10 @@ nav li:last-child:hover>a{
     display: block;
 }
 .sub ul:first-child{
-    border-radius: 6px 6px;
+    border-radius: 3px 3px;
 }
 .sub ul:last-child{
-    border-radius: 6px 6px;
+    border-radius: 3px 3px;
 }
 .sub li:hover>a{
     color: #fd8612;
@@ -232,10 +232,10 @@ nav li:last-child:hover>a{
     background-color: #2a3644;
 }
 .sub li:hover:first-child>a{
-    border-radius: 6px 6px 0 0;
+    border-radius: 3px 3px 0 0;
 }
 .sub li:hover:last-child>a{
-    border-radius: 0 0 6px 6px;
+    border-radius: 0 0 3px 3px;
 }
 .subes li{
     position: relative;
@@ -265,14 +265,14 @@ nav li:last-child:hover>a{
     font-size: 14px;
     display: block;
     text-align: justify;
-    border-radius: 6px;
+    border-radius: 3px;
 }
 .third a{
     color: white;
     text-decoration: none;
 }
 .third ul{
-    border-radius: 6px;
+    border-radius: 3px;
     box-sizing: content-box;
 }
 .third a{
@@ -292,6 +292,15 @@ nav li:last-child:hover>a{
 .about li,
 .social li{
     display: inline-block;
+    font-size: 0;
+    border-left: none;
+    margin: 0;
+}
+.about{
+    font-size: 0;
+}
+.about li a,
+.social li a{
     font-size: 14px;
 }
 .social li{
@@ -317,13 +326,13 @@ nav li:last-child:hover>a{
     background-color: #3f4852;
 }
 .third li:first-child:hover>a{
-    border-radius: 6px 0 0 6px;
+    border-radius: 3px 0 0 3px;
 }
 .submenu li:first-child:hover>a{
-    border-radius: 6px 6px 0 0;
+    border-radius: 3px 3px 0 0;
 }
 .submenu li:last-child:hover>a{
-    border-radius:  0 0 6px 6px;
+    border-radius:  0 0 3px 3px;
 }
 .about,
 .social{
@@ -337,13 +346,17 @@ nav li:last-child:hover>a{
     display: block;
 }
 .double-bg ul{
-    border-radius: 6px;
+    border-radius: 3px;
 }
 .double ul{
     width: 210px;
 }
 .about li a{
-    padding: 10.5px;
+    padding: 15px 30px;
+    border-left: none;
+}
+.about>li:first-child>a{
+    padding: 15px 30px 15px 55px;
 }
 .submenu li{
     display: block;
@@ -359,11 +372,11 @@ nav li:last-child:hover>a{
     border: 6px;
 }
 .double-bg ul:first-child li{
-    border-right: 1px solid #3f4852;
+    border-right: 1px solid #b9bdc1;
 }
 .double-bg{
     overflow: hidden;
-    border-radius: 6px;
+    border-radius: 3px;
 }
 .double-bg ul:first-child{
     border-radius: 0;
@@ -422,7 +435,7 @@ nav li:last-child:hover>a{
     position: absolute;
     width: 15px;
     height: 16px;
-    left: 17px;
+    left: 28px;
     background: url(../img/spat.png) no-repeat -1px -49px;
     transition: all 0.2s ease;
 }
@@ -431,15 +444,12 @@ nav li:last-child:hover>a{
     position: absolute;
     width: 16px;
     height: 16px;
-    left: 17px;
+    left: 28px;
     background: url(../img/spat.png) no-repeat -19px -49px;
     transition: all 0.2s ease;
 }
-.about>li:first-child a{
-    padding-left: 41px;
-}
 .social{
-    padding: 2.5px 5px 2px 0;
+    padding: 7px 28px;
 }
 .social li:hover>a{
     background-color: #2a3644;
@@ -548,5 +558,5 @@ tbody tr:hover{
 table,
 .table{
     overflow: hidden;
-    border-radius: 6px;
+    border-radius: 3px;
 }
