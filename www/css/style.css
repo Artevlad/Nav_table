@@ -117,6 +117,14 @@ nav,
 .menu li:last-child{
     border-right: none;
 }
+.menu>li a,
+.menus>li a,
+.about>li a{
+    font-size: 16px;
+    color: #ffffff;
+    font-family: "Arial";
+    font-weight: bold;
+}
 .submenu li:hover a{
     background-color: #2a3644;
     color: #fd8612;
@@ -308,10 +316,6 @@ nav li:last-child:hover>a{
 .about{
     font-size: 0;
 }
-.about li a,
-.social li a{
-    font-size: 14px;
-}
 .social li{
     margin-left: 20px;
 }
@@ -364,8 +368,22 @@ nav li:last-child:hover>a{
     padding: 15px 30px;
     border-left: none;
 }
+.submenu li a,
+.sub li a,
+.subs li a,
+.subes li a{
+    padding-left: 20px;
+    font-size: 15px;
+    color: #2a3644;
+    font-family: "Arial";
+    font-weight: bold;
+}
 .about>li:first-child>a{
     padding: 15px 30px 15px 55px;
+}
+.submenu li:last-child,
+.about li:last-child{
+    border-bottom: none;
 }
 .submenu li{
     display: block;
@@ -398,6 +416,12 @@ nav li:last-child:hover>a{
 }
 .double-bg li:last-child:hover>a{
     border-radius: 0;
+}
+.double-bg{
+    background-color: #d2d4d5;
+}
+.right li:last-child{
+    border-bottom: 1px solid #b9bdc1;
 }
 .social a{
     display: block;
@@ -458,7 +482,7 @@ nav li:last-child:hover>a{
     transition: all 0.2s ease;
 }
 .social{
-    padding: 12px 30px;
+    padding: 13px 30px;
 }
 .social li:hover>a{
     background-color: #2a3644;
@@ -562,6 +586,15 @@ tbody tr:hover{
 }
 .row i{
     font-style: normal;
+    font-size: 16px;
+    color: #2a3644;
+    font-family: "Arial";
+}
+tbody th{
+    font-weight: normal;
+    font-size: 16px;
+    color: #2a3644;
+    font-family: "Arial";
 }
 .year,
 .cell b:first-child,
