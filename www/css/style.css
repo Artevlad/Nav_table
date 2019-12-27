@@ -86,8 +86,11 @@ nav,
     list-style: none;
     background-color: lightgray;
 }
-.submenu li:last-child{
+.submenu:last-child{
     border-bottom: none;
+}
+.menu li:last-child .submenu{
+    right: 0;
 }
 .menu li:hover .submenu{
     display: block;
@@ -316,7 +319,7 @@ nav li:last-child:hover>a{
     float:left;
 }
 .social{
-    float:right;
+    float: right;
 }
 .third li:hover .submenu{
     display: block;
@@ -402,9 +405,9 @@ nav li:last-child:hover>a{
 }
 .social .fb{
     width: 10px;
-    height: 24px;
+    height: 18px;
     transition: all 0.2s ease;
-    background-position: 0px 6px;
+    background-position: 0px 0px;
 }
 .social .tw{
     width: 19px;
@@ -420,9 +423,9 @@ nav li:last-child:hover>a{
 }
 .fb:hover{
     width: 10px;
-    height: 24px;
+    height: 18px;
     transition: all 0.2s ease;
-    background-position: -10px 6px
+    background-position: -10px 0;
 }
 .tw:hover{
     width: 19px;
@@ -455,7 +458,7 @@ nav li:last-child:hover>a{
     transition: all 0.2s ease;
 }
 .social{
-    padding: 7px 28px;
+    padding: 12px 30px;
 }
 .social li:hover>a{
     background-color: #2a3644;
@@ -540,6 +543,9 @@ tbody tr:hover{
     color: #ffffff;
 }
 .table p:last-child{
+    border-bottom: none;
+}
+.table .row:last-child i{
     border-bottom: none;
 }
 .table b{
