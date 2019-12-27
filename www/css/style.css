@@ -31,7 +31,12 @@ nav,
     color: #bfbfbf;
     font-family: "Arial";
     font-weight: bold;
-    /*font: bold 24px Arial, sans-serif;*/
+    font: bold 24px Arial, sans-serif;
+    margin-top: 55px;
+    margin-bottom: 25px;
+}
+.h1:first-child{
+    margin-top: 68px;
 }
 .first a{
     color: white;
@@ -266,6 +271,7 @@ nav li:last-child:hover>a{
     display: block;
     text-align: justify;
     border-radius: 3px;
+    margin-bottom: 0;
 }
 .third a{
     color: white;
@@ -523,14 +529,18 @@ tbody tr:hover{
     display: table;
     border-collapse: collapse;
     width: 100%;
+    margin-bottom: 95px;
 }
 .table p{
     display: table-row;
 }
-.table p:first-child {
+.table p:first-child{
     background-color: #2a3644;
     font-size: 16px;
     color: #ffffff;
+}
+.table p:last-child{
+    border-bottom: none;
 }
 .table b{
     font-weight: bold;
@@ -543,6 +553,9 @@ tbody tr:hover{
     padding: 15px 25px;
     width: 500px;
     text-align: left;
+}
+.row i{
+    font-style: normal;
 }
 .year,
 .cell b:first-child,
